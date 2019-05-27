@@ -1,4 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto:500,500i,700,700i,900,900i');
 h1{
     color: #5CDB95;
     font-size: 12em;
+    text-align: center;
+    text-decoration:underline;
+    font-weight: bold; 
+    font-family: "Roboto";
+}
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+    font-weight: 100;
+}
+a:hover {
+    color: lightcoral;
+    font-size: 2em;
+}
+a{
+    text-align: center;
+}
+body {
+    text-align: center;
+    font-family: "Roboto";
+}
+footer {
+    text-align: left;
+}
+body {
+    color: goldenrod;
 }
