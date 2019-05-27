@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto:500,500i,700,700i,900,900i');
 h1{
     color: #5CDB95;
-    font-size: 12em;
+    font-size: 5em;
     text-align: center;
     text-decoration:underline;
     font-weight: bold; 
     font-family: "Roboto";
 }
+
 a:link,
 a:visited {
     color: black;
