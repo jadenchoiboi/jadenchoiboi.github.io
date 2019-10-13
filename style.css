@@ -55,3 +55,8 @@ h2 {
     margin-right: 5%;
 
 }
+canvas {
+    border-style: solid;
+    border-width: thick;
+    border-color: #5CDB95;
+}

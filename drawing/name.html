@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="drawRuler.js"></script> 
+        <script src="drawName.js"></script>
+        <!-- Script is where you provide javascript code 
+        #1) Actually literally puting javascript code in the start and end script 
+    #2) Actually linking a javascript file to this file -->
+        <link rel="stylesheet" href="../style.css">
+        <!-- Script: Element to link or write javascript-->
+        <script>
+            // The javascript canvas that will be coded in script.
+            var canvas; 
+            // The context of the canvas whether it's 2d or 3d. 
+            var ctx;
+            const UNIT = 30;
+            // When the window is loaded, run the init function.
+            window.onload= init; 
+            // Function: A series of instructions embedded within a command. 
+            function init() {
+                canvas = document.getElementById("myCanvas");
+                ctx = canvas.getContext("2d");
+                drawName();
+               
+                
+        
+      
+            }
+            
+            
+        </script>
+    </head>
+    <body>
+        <header>
+        <h1>Name</h1>
+        </header>
+        <nav>
+              <a href="drawing.html"> Back to Drawing Page</a>
+        </nav>
+        <section>
+            <!-- Canvas: The element to draw within HTML.-->
+            <canvas id="myCanvas" width="1000" height="500"></canvas>
+        </section>
+        <footer>
+            <p>&copy; 2019</p>
+        </footer>
+
+    </body>
+
+</html>

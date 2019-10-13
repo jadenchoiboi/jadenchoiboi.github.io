@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="drawRuler.js"></script>
+        <link rel="stylesheet" href="../style.css">
+        <!-- Script: Element to link or write javascript-->
+        <script>
+            // The javascript canvas that will be coded in script.
+            var canvas; 
+            // The context of the canvas whether it's 2d or 3d. 
+            var ctx;
+            const UNIT = 30;
+            // When the window is loaded, run the init function.
+            window.onload= init; 
+            // Function: A series of instructions embedded within a command. 
+            function init() {
+                canvas = document.getElementById("myCanvas");
+                ctx = canvas.getContext("2d");
+                draw();
+      
+            }
+            function draw() {
+                 // Drawing a rectangle with given position (x,y) and size (w,h)
+              ctx.fillStyle = "red"
+              ctx.fillRect(16*UNIT,8*UNIT,UNIT,UNIT);
+              ctx.fillStyle= "black"
+              ctx.fillRect(10*UNIT,10*UNIT,2*UNIT,2*UNIT);
+              ctx.fillRect(12*UNIT,12*UNIT,9*UNIT,2*UNIT);
+              ctx.fillRect(21*UNIT,10*UNIT,2*UNIT,2*UNIT);
+              ctx.fillStyle= "blue"
+              ctx.fillRect(12*UNIT,5*UNIT,2*UNIT,2*UNIT);
+              ctx.fillRect(19*UNIT,5*UNIT,2*UNIT,2*UNIT);
+        
+            
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+        <h1>Drawing</h1>
+        </header>
+        <nav>
+              <a href="../index.html">Back to Homepage</a> 
+              <br>
+              <br>
+              <br>
+              <a href="name.html"> To Name Page</a>
+        </nav>
+        <section>
+            <!-- Canvas: The element to draw within HTML.-->
+            <canvas id="myCanvas" width="1000" height="500"></canvas>
+        </section>
+        <footer>
+            <p>&copy; 2019</p>
+        </footer>
+
+    </body>
+
+</html>
