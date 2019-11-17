@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <script>
+            var canvas;
+            var ctx;
+            const UNIT = 20;
+            // go through pages and look at elements for setting up page
+            window.onload = init;
+            // when the window is loaded, run the init function
+            function init() {
+                canvas = document.getElementById("myCanvas");
+                ctx = canvas.getContext("2d");
+                // understand this paragraph from LINE 6 to LINE 15
+                drawBackground();
+                // drawPacmanLeftOpen();
+                // drawPacmanLeftWideOpen();
+                // drawPacmanCircle();
+                // drawPacmanRightWideOpen();
+                // drawPacmanRightOpen();
+                // drawPellet();
+            //    drawPowerPellet();
+               drawGhost(5,0);
+              // drawGhost(5,0,"blue");
+
+
+
+               
+               drawRuler(1);
+            }
+            function drawBackground() {
+                ctx.fillStyle = "white";
+                ctx.fillRect(0,0,canvas.width,canvas.height);
+            }
+        </script>
+        <script src="drawPacman.js"></script>
+        <script src="drawRuler.js"></script>
+        <script src="drawPellet.js"></script>
+        <script src="drawGhost.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Pac-Man</h1>
+        </header>
+        <nav>
+            <a href="drawing.html"> Back to Drawing Page</a>
+        </nav>
+        <section>
+            <canvas id="myCanvas" width="1000" height="500"></canvas>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+
+</html>
